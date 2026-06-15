@@ -26,9 +26,8 @@ The master skill is built around four pillars: **content inboxing (deliverabilit
 
 ### Easiest: one command (recommended)
 
-Paste this into a terminal. It installs git if needed, downloads the repo, and
-sets up the skills + Python automatically. A GitHub sign-in window may appear
-the first time (the repo is private) — sign in once and it continues.
+Paste this into a terminal. It installs git if needed, downloads the skills, and
+sets up Python automatically. No login or account required.
 
 **Windows** (PowerShell):
 ```powershell

@@ -1,7 +1,8 @@
 # NOTICE
 
-Internal team materials for the email lead-gen team. Confidential — do not
-redistribute outside the team.
+Generic skill pack for an email lead-gen team. Contains no proprietary domains,
+network names, or business data — all examples use placeholders (brand-a.com,
+Network A/B/C). Safe to install and share.
 
 - `team-inboxing-mastery` is original team material.
 - `digital-marketing-pro`, `ops-manager`, `email-data-analyst`,
