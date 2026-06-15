@@ -1,0 +1,6 @@
+# Python packages needed by the xlsx skill's helper scripts.
+# Installed automatically by install.bat / install.sh.
+openpyxl
+pandas
+lxml
+defusedxml

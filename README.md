@@ -40,6 +40,13 @@ The installer copies each skill into your Claude Code skills folder
 It replaces **only** the 7 skills in this pack and leaves any other skills you
 already have installed untouched.
 
+**Python is set up automatically.** The installer detects Python; if it's
+missing it installs Python 3 (Windows: via winget; macOS: Homebrew; Linux:
+apt/dnf/pacman), then installs the packages the `xlsx` skill needs
+(`openpyxl`, `pandas`, `lxml`, `defusedxml` — see `requirements.txt`). If
+auto-install can't run on a locked-down machine, the installer prints a clear
+manual fallback and continues — only the `xlsx` automation depends on Python.
+
 ---
 
 ## Getting this repo
