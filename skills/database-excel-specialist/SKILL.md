@@ -18,13 +18,13 @@ Built specifically for affiliate lead-gen operations — domain rotation, EPC tr
 ```
 - EPC = Revenue / Clicks
 - Status: Active / Paused / Testing / Retired
-- Network: ZP / ZP2 / DOT / LG (never TPL/TPL2)
+- Network: label each lead network generically (e.g. Network A / Network B / Network C); exclude any you've blacklisted
 
 ### Network Tier Model
 ```
-Tier 1 (ZP dominant):  EPC > 0.48
-Tier 2 (DOT):          EPC 0.35–0.48
-Tier 3 (LG):           EPC 0.25–0.34
+Tier 1 (top network):  EPC > 0.48     (example thresholds — set your own)
+Tier 2 (mid network):  EPC 0.35–0.48
+Tier 3 (low network):  EPC 0.25–0.34
 Retire:                EPC < 0.25 for 3+ days
 ```
 
@@ -35,7 +35,7 @@ Retire:                EPC < 0.25 for 3+ days
 ### EPC Rotation Logic (Excel formula)
 ```excel
 Network Assignment:
-=IF(EPC>0.48,"ZP", IF(EPC>0.35,"DOT", IF(EPC>0.25,"LG","RETIRE")))
+=IF(EPC>0.48,"TIER1", IF(EPC>0.35,"TIER2", IF(EPC>0.25,"TIER3","RETIRE")))
 
 7-Day Rolling EPC:
 =AVERAGEIF(DateRange,">="&TODAY()-7,EPCRange)
@@ -49,9 +49,9 @@ Flag underperformers:
 
 ### Auto-Color Conditional Formatting Rules
 ```
-Green  (#2DC653): EPC > 0.48  → ZP candidate
-Yellow (#F4A261): EPC 0.35–0.48 → DOT candidate
-Orange (#E07B39): EPC 0.25–0.34 → LG candidate
+Green  (#2DC653): EPC > 0.48  → Tier 1 candidate
+Yellow (#F4A261): EPC 0.35–0.48 → Tier 2 candidate
+Orange (#E07B39): EPC 0.25–0.34 → Tier 3 candidate
 Red    (#E63946): EPC < 0.25  → Retire
 ```
 
@@ -76,9 +76,9 @@ def analyze_domains(filepath):
     df.columns = ['Domain','Clicks','Revenue','EPC','Network']
     df['EPC'] = df['Revenue'] / df['Clicks']
     df['Tier'] = df['EPC'].apply(lambda x:
-        'ZP' if x > 0.48 else
-        'DOT' if x > 0.35 else
-        'LG' if x > 0.25 else 'RETIRE')
+        'TIER1' if x > 0.48 else
+        'TIER2' if x > 0.35 else
+        'TIER3' if x > 0.25 else 'RETIRE')
     df['Action'] = df.apply(lambda r:
         '🔺 Promote' if r['Tier'] != r['Network'] and r['EPC'] > 0.48 else
         '🔻 Rotate'  if r['Tier'] != r['Network'] and r['EPC'] < 0.35 else
@@ -116,7 +116,7 @@ CREATE TABLE domains (
 CREATE TABLE performance_daily (
     id SERIAL PRIMARY KEY,
     domain_id INT REFERENCES domains(id),
-    network VARCHAR(20), -- ZP/DOT/LG
+    network VARCHAR(20), -- generic network label (Network A/B/C)
     report_date DATE,
     clicks INT,
     revenue DECIMAL(10,2),
@@ -134,9 +134,9 @@ CREATE TABLE network_assignments (
 -- Useful views
 CREATE VIEW current_performance AS
 SELECT d.domain, p.network, p.epc,
-    CASE WHEN p.epc > 0.48 THEN 'ZP'
-         WHEN p.epc > 0.35 THEN 'DOT'
-         WHEN p.epc > 0.25 THEN 'LG'
+    CASE WHEN p.epc > 0.48 THEN 'TIER1'
+         WHEN p.epc > 0.35 THEN 'TIER2'
+         WHEN p.epc > 0.25 THEN 'TIER3'
          ELSE 'RETIRE' END AS recommended_tier
 FROM domains d
 JOIN performance_daily p ON d.id = p.domain_id

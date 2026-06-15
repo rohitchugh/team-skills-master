@@ -38,7 +38,7 @@ Computed columns are formulas, not hand-typed. Conditional-format the red lines 
 ### b) Domain / network rotation model
 One row per domain (mirrors the ops `domain tracker`):
 ```
-Domain | Niche | Network (ZP/DOT/LG) | 3-day avg EPC | Status | Last action | Next review
+Domain | Niche | Network (A/B/C) | 3-day avg EPC | Status | Last action | Next review
 ```
 Status: Active / Testing / Paused / Rotating / Retired. Rule baked into the sheet: flag any domain with 3-day EPC < 0.35.
 

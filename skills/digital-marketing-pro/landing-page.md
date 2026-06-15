@@ -92,19 +92,19 @@ Privacy policy | Terms | Unsubscribe
 
 ### Personal Loans
 ```
-Title: Personal Loans Up to $50,000 | Apply Online — GimmeLoans
+Title: Personal Loans Up to $50,000 | Apply Online — YourBrand
 Meta: Need fast cash? Apply in 2 minutes and get matched with 500+ lenders. All credit types welcome. Rates from 5.99% APR. No credit impact to check.
 ```
 
 ### Auto Loans
 ```
-Title: Auto Loans for All Credit Types | Rates from 3.99% — GimmeLoans
+Title: Auto Loans for All Credit Types | Rates from 3.99% — YourBrand
 Meta: Get approved for your next car loan regardless of credit history. Compare offers from top auto lenders. Fast decision, no obligation.
 ```
 
 ### Mortgage
 ```
-Title: Mortgage Rates Today | Compare & Save — GimmeLoans
+Title: Mortgage Rates Today | Compare & Save — YourBrand
 Meta: Check today's mortgage rates and compare offers from top lenders. First-time buyers welcome. Get pre-qualified in minutes without affecting your credit.
 ```
 
@@ -122,9 +122,9 @@ Meta: [Product] is formulated with [key ingredients] to support [benefit]. Made 
 {
   "@context": "https://schema.org",
   "@type": "FinancialService",
-  "name": "GimmeLoans",
+  "name": "YourBrand",
   "description": "Personal loan matching service connecting borrowers with lenders",
-  "url": "https://gimmeloans.com",
+  "url": "https://your-domain.com",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",

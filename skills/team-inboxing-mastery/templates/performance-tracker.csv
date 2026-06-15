@@ -1,6 +1,6 @@
 Date,Domain,List/Segment,Subject (A/B),Sent,Delivered,Opens,Open%,Clicks,CTR,Leads,Revenue,RPE,EPC,Complaints,Comp%,Unsubs,Unsub%,Status,Notes
-2026-06-10,gimmeloans.com,Engaged-30d,"A: Quick funds / B: Approved today",50000,49100,9330,19.0%,1080,2.2%,210,420.00,0.0086,0.39,18,0.04%,140,0.29%,Active,"B subject won; EPC dipping watch"
-2026-06-11,bwfloan.com,Full-active,"A: Your offer / B: 1 step left",40000,39200,6664,17.0%,705,1.8%,150,330.00,0.0084,0.47,22,0.06%,160,0.41%,Active,"Comp% creeping; re-segment next send"
+2026-06-10,brand-a.com,Engaged-30d,"A: Quick funds / B: Approved today",50000,49100,9330,19.0%,1080,2.2%,210,420.00,0.0086,0.39,18,0.04%,140,0.29%,Active,"B subject won; EPC dipping watch"
+2026-06-11,brand-b.com,Full-active,"A: Your offer / B: 1 step left",40000,39200,6664,17.0%,705,1.8%,150,330.00,0.0084,0.47,22,0.06%,160,0.41%,Active,"Comp% creeping; re-segment next send"
 ,,,,,,,,,,,,,,,,,,,
 # FORMULAS (set these as real formulas in Excel/Sheets; do not hand-type the rates):,,,,,,,,,,,,,,,,,,,
 # Open% = Opens / Delivered,,,,,,,,,,,,,,,,,,,

@@ -1,7 +1,7 @@
 ---
 name: digital-marketing-pro
 description: |
-  Full-stack digital marketing expert for affiliate and lead-gen websites across Finance (loans, mortgages, auto), Nutra/Health, and similar niches. Use this skill whenever the user wants to: build or redesign a landing page, write SEO-optimized content, run an SEO audit, set up or optimize Google Analytics / Google Ads / Meta Ads, plan or write email marketing campaigns, analyze competitor sites, build backlink strategies, or improve conversion rates on existing pages. Also trigger for any request involving GimmeLoans or similar affiliate loan/finance/health sites, domain rotation strategy, ad copy, or drip email sequences. If the request touches SEO, ads, email, content, or landing pages — use this skill.
+  Full-stack digital marketing expert for affiliate and lead-gen websites across Finance (loans, mortgages, auto), Nutra/Health, and similar niches. Use this skill whenever the user wants to: build or redesign a landing page, write SEO-optimized content, run an SEO audit, set up or optimize Google Analytics / Google Ads / Meta Ads, plan or write email marketing campaigns, analyze competitor sites, build backlink strategies, or improve conversion rates on existing pages. Also trigger for any request involving affiliate loan/finance/health sites, domain rotation strategy, ad copy, or drip email sequences. If the request touches SEO, ads, email, content, or landing pages — use this skill.
 ---
 
 # Digital Marketing Pro Skill
@@ -197,7 +197,7 @@ Read `references/email-marketing.md` for full sequences and templates.
 | Subject line | 6–10 words, personalized, curiosity or urgency |
 | Preview text | Complement subject — not repeat it |
 | Send time | Tue–Thu, 9–11am or 6–8pm local |
-| From name | Use a person name, not brand ("Mike at GimmeLoans") |
+| From name | Use a person name, not brand ("Mike at YourBrand") |
 | CTA button | Single, above the fold, contrasting color |
 | List hygiene | Remove bounces + 90-day inactive monthly |
 

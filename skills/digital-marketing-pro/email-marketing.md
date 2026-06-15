@@ -20,7 +20,7 @@ While you wait → [Check your estimated rate — no credit impact]
 
 Talk soon,
 Mike
-GimmeLoans Team
+YourBrand Team
 
 ---
 This is not a guarantee of approval. Rates vary by lender and credit profile.
@@ -66,7 +66,7 @@ Sarah from Ohio had a 580 credit score and needed $8,500 for car repairs.
 
 Three banks turned her down.
 
-She came to GimmeLoans, got matched with a lender in our network, and had funds in her account in 24 hours.
+She came to YourBrand, got matched with a lender in our network, and had funds in her account in 24 hours.
 
 "I honestly didn't think I'd qualify anywhere. This was the easiest application I've ever done." — Sarah M., Ohio
 
@@ -142,9 +142,9 @@ But if you're still looking, I wanted to share one more option:
 Either way — good luck, and feel free to come back anytime.
 
 Mike
-GimmeLoans
+YourBrand
 
-[Unsubscribe] | GimmeLoans, 123 Main St, City, State ZIP
+[Unsubscribe] | YourBrand, 123 Main St, City, State ZIP
 ```
 
 ---

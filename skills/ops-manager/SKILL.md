@@ -42,12 +42,12 @@ Keeps your affiliate operation running without you having to hold everything in 
 ## Domain Portfolio Tracker Template
 
 ```
-| Domain          | Niche    | Network | EPC  | Status   | Last Action        | Next Review |
-|-----------------|----------|---------|------|----------|--------------------|-------------|
-| gimmeloans.com  | Finance  | ZP      | 0.70 | Active   | Dark mode fix 2/20 | 2/27        |
-| speedycash      | Finance  | ZP      | 0.70 | Active   | —                  | 2/27        |
-| bwfloan         | Finance  | ZP      | 0.75 | Active   | —                  | 2/27        |
-| [domain]        | Auto     | DOT     | 0.38 | Testing  | Added 2/15         | 2/22        |
+| Domain          | Niche    | Network   | EPC  | Status   | Last Action        | Next Review |
+|-----------------|----------|-----------|------|----------|--------------------|-------------|
+| brand-a.com     | Finance  | Network A | 0.70 | Active   | Dark mode fix 2/20 | 2/27        |
+| brand-b.com     | Finance  | Network A | 0.70 | Active   | —                  | 2/27        |
+| brand-c.com     | Finance  | Network A | 0.75 | Active   | —                  | 2/27        |
+| brand-d.com     | Auto     | Network B | 0.38 | Testing  | Added 2/15         | 2/22        |
 ```
 
 Status options: Active / Testing / Paused / Rotating / Retired
@@ -71,14 +71,14 @@ PRE-LAUNCH
 □ Page speed > 85 (PageSpeed Insights)
 
 NETWORK SETUP
-□ ZeroParallel (or chosen network) form embedded
+□ Lead network form embedded (your chosen network)
 □ Test lead submitted and confirmed received
 □ Postback/pixel firing correctly
 
 GO-LIVE
 □ Set status to "Testing" in domain tracker
 □ Drive small traffic (100 clicks) to verify EPC
-□ If EPC > 0.35 after 3 days → promote to Active / ZP
+□ If EPC > 0.35 after 3 days → promote to Active / top-tier network
 □ If EPC < 0.25 after 5 days → pause and investigate
 ```
 
@@ -89,7 +89,7 @@ TRIGGER: EPC drops below 0.35 for 3 consecutive days
 STEPS:
 1. Confirm with 3-day average (not single day spike)
 2. Check if issue is traffic quality or network payout
-3. Move domain: ZP → DOT (or DOT → LG)
+3. Move domain down a tier: Network A → Network B (or B → C)
 4. Log change in domain tracker with reason
 5. Monitor for 5 days at new network
 6. If EPC recovers above 0.48 → promote back up
@@ -131,7 +131,7 @@ Do highest scores first.
 
 ```
 🟢 LIVE & RUNNING
-- GimmeLoans.com (ZP, EPC 0.70)
+- brand-a.com (Network A, EPC 0.70)
 - [domain 2]
 - Email list: weekly nurture sequence active
 
