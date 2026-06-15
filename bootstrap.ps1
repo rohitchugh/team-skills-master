@@ -27,13 +27,16 @@ if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
   return
 }
 
-# 2. Clone or update. A GitHub sign-in window may appear the first time (private repo).
+# 2. Download. Uses the read-only access token from $env:TSM_TOKEN (set in the
+#    install command). Falls back to normal GitHub auth if no token is provided.
+$base = 'github.com/rohitchugh/team-skills-master.git'
+if ($env:TSM_TOKEN) { $cloneUrl = "https://oauth2:$($env:TSM_TOKEN)@$base" } else { $cloneUrl = "https://$base" }
+
+if (Test-Path $dir) { Remove-Item -Recurse -Force $dir }   # always fetch a clean, latest copy
+Write-Host "Downloading the latest skills to $dir ..." -ForegroundColor Cyan
+git clone --depth 1 $cloneUrl $dir
 if (Test-Path (Join-Path $dir '.git')) {
-  Write-Host "Updating existing copy at $dir ..." -ForegroundColor Cyan
-  git -C $dir pull --ff-only
-} else {
-  Write-Host "Downloading the repo to $dir (sign in to GitHub if a window appears)..." -ForegroundColor Cyan
-  git clone $repo $dir
+  git -C $dir remote set-url origin "https://$base"        # strip the token from local config
 }
 if (-not (Test-Path (Join-Path $dir 'install.ps1'))) {
   Write-Host "ERROR: download failed. Make sure you have access to the private repo." -ForegroundColor Red
