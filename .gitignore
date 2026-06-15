@@ -1,0 +1,11 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# gstack runtime logs that can appear inside skill folders
+**/.gstack/
+
+# python build artifacts (xlsx helper scripts)
+**/__pycache__/
+*.pyc
