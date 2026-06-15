@@ -24,12 +24,32 @@ The master skill is built around four pillars: **content inboxing (deliverabilit
 
 ## Install
 
-### Windows
+### Easiest: one command (recommended)
+
+Paste this into a terminal. It installs git if needed, downloads the repo, and
+sets up the skills + Python automatically. A GitHub sign-in window may appear
+the first time (the repo is private) — sign in once and it continues.
+
+**Windows** (PowerShell):
+```powershell
+irm https://gist.githubusercontent.com/rohitchugh/915e834a4e28a9587e177d7c8b2df45b/raw/bootstrap.ps1 | iex
+```
+
+**macOS / Linux** (Terminal):
+```bash
+curl -fsSL https://gist.githubusercontent.com/rohitchugh/915e834a4e28a9587e177d7c8b2df45b/raw/bootstrap.sh | bash
+```
+
+Then restart Claude Code and type `/team-inboxing-mastery`.
+
+### Manual alternative
+
+**Windows**
 1. Download / clone this repo.
 2. Double-click **`install.bat`** (if SmartScreen warns: "More info" -> "Run anyway").
 3. Restart Claude Code. Type `/team-inboxing-mastery`.
 
-### macOS / Linux
+**macOS / Linux**
 ```bash
 bash install.sh
 ```
