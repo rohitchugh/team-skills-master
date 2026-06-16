@@ -18,7 +18,7 @@ Everyone on the team learns all four. You will start strong in one and cross-tra
 
 | # | Pillar | What it means | Deep dive | Specialist skill to execute with |
 |---|--------|---------------|-----------|----------------------------------|
-| 1 | **Content Inboxing (Deliverability)** | Getting the email into the inbox, not spam or promotions. Authentication, reputation, warmup, content hygiene, seed testing. | [references/01-inboxing-deliverability.md](references/01-inboxing-deliverability.md) | `email-data-analyst`, `compliance-legal-shield`, `digital-marketing-pro` |
+| 1 | **Content Inboxing (Deliverability)** | Getting the email into the inbox, not spam or promotions. Authentication, reputation, warmup, content hygiene, spam-word scanning, seed testing. | [references/01-inboxing-deliverability.md](references/01-inboxing-deliverability.md) | `content-guard`, `email-data-analyst`, `compliance-legal-shield`, `digital-marketing-pro` |
 | 2 | **Website & Landing Analysis** | Auditing our landing pages and competitor sites: speed, compliance, conversion, mobile, tracking, teardown. | [references/02-website-landing-analysis.md](references/02-website-landing-analysis.md) | `digital-marketing-pro`, `browse`, `scrape`, `fullstack-developer` |
 | 3 | **Excel / Google Sheets Analytics** | Building and reading the sheets: opens, clicks, revenue, EPC, RPE, list health, A/B significance, pivots, network rotation models. | [references/03-sheets-analytics.md](references/03-sheets-analytics.md) | `database-excel-specialist`, `xlsx`, `email-data-analyst` |
 | 4 | **Team Structure & Growth** | How roles, lanes, SOPs, reviews, and the skill ladder fit together so people grow into doing more. | [references/04-team-structure-growth.md](references/04-team-structure-growth.md) | `ops-manager` |
@@ -35,6 +35,8 @@ State what you need; this skill points you to the right place.
 |----------------|---------|
 | Learn the whole job from zero | Read [PLAYBOOK.md](PLAYBOOK.md), then shadow a senior on one live campaign |
 | Understand why mail goes to spam | [references/01-inboxing-deliverability.md](references/01-inboxing-deliverability.md) |
+| Check a subject / from / HTML for spam words | invoke `content-guard` (run before every send) |
+| Connect & analyze my own report (subject/from/timing/inboxing/HTML) | [references/05-connect-your-reports-and-analyze.md](references/05-connect-your-reports-and-analyze.md) |
 | Launch an email campaign safely | [templates/campaign-launch-checklist.md](templates/campaign-launch-checklist.md) |
 | Diagnose a deliverability drop | [templates/deliverability-audit.md](templates/deliverability-audit.md) |
 | Audit a landing page or competitor | [templates/site-audit.md](templates/site-audit.md) + [references/02-website-landing-analysis.md](references/02-website-landing-analysis.md) |

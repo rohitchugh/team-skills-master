@@ -6,11 +6,12 @@ Start here after installing: type **`/team-inboxing-mastery`** in Claude Code, a
 
 ---
 
-## What's inside (7 skills)
+## What's inside (8 skills)
 
 | Skill | What it does |
 |-------|--------------|
 | **team-inboxing-mastery** | The master hub + onboarding playbook + ready-to-use templates. Teaches the whole job and routes to the others. |
+| content-guard | Scans subject / from / HTML against a 369-word spam blacklist (+ `!`, `$`, ALL-CAPS); flags or strips. Run before every send. |
 | email-data-analyst | Reads campaign metrics, finds why performance dropped, A/B significance, dashboards. |
 | database-excel-specialist | Builds and automates the performance sheets, models, SQL, pivots. |
 | digital-marketing-pro | Landing pages, SEO, ads, email copy, competitor analysis. |

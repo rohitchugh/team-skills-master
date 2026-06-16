@@ -22,7 +22,7 @@ Copy this per send. Do not skip a box. Hard stops are marked ⛔.
 ```
 □ Subject line A/B set up (2 variants, one variable)
 □ Text-to-image balance ok (~60% text, not all-image)
-□ No spam triggers (CAPS, !!!, $$$, FREE, guaranteed, shorteners)
+□ content-guard PASS on subject + from + body (no blacklisted words, !!!, $$$, CAPS)
 □ Unsubscribe link works + physical address present (CAN-SPAM)
 □ All links tested, visible text matches destination
 □ Renders ok: mobile + desktop, light + dark
