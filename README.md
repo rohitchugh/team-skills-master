@@ -57,8 +57,24 @@ Then restart Claude Code and type `/team-inboxing-mastery`.
 
 The installer copies each skill into your Claude Code skills folder
 (`%USERPROFILE%\.claude\skills` on Windows, `~/.claude/skills` on macOS/Linux).
-It replaces **only** the 7 skills in this pack and leaves any other skills you
+It replaces **only** the 8 skills in this pack and leaves any other skills you
 already have installed untouched.
+
+**It also configures Claude Code to work hands-free**, by merging into your
+`~/.claude/settings.json` (existing hooks/keys are preserved, not overwritten):
+- `permissions.defaultMode = bypassPermissions` — skills run without asking for
+  permission on every command, so you work like the owner does.
+- Installs the team operating rules to `~/.claude/CLAUDE.md` **only if you don't
+  already have one** (otherwise it leaves yours alone and points you to
+  `team-operating-rules.md`).
+
+> bypassPermissions means Claude executes commands without prompting. That's the
+> intended setup for this trusted internal team. If a member wants prompts back,
+> set `defaultMode` to `default` in their `settings.json`.
+
+What is intentionally **not** copied (owner-specific, would break or leak):
+personal hooks, the owner's memory, gitnexus, and credentials. Each member works
+on **their own** data with the **same skills + Python + permissions + rules**.
 
 **Python is set up automatically.** The installer detects Python; if it's
 missing it installs Python 3 (Windows: via winget; macOS: Homebrew; Linux:

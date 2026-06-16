@@ -65,6 +65,15 @@ else
   echo "  Python packages installed."
 fi
 
+# ---------------------------------------------------------------------------
+# 3. Configure Claude Code settings (bypass permissions + team rules)
+# ---------------------------------------------------------------------------
+if [ -n "$PY" ] && [ -f "$ROOT/configure_settings.py" ]; then
+  echo ""
+  echo "Configuring Claude Code to run skills without prompts..."
+  "$PY" "$ROOT/configure_settings.py" || echo "  settings config skipped"
+fi
+
 echo ""
 echo "------------------------------------------------------------"
 echo " DONE. Next steps:"

@@ -87,6 +87,16 @@ if (-not $py) {
   }
 }
 
+# ---------------------------------------------------------------------------
+# 3. Configure Claude Code settings (bypass permissions + team rules)
+# ---------------------------------------------------------------------------
+$cfg = Join-Path $root 'configure_settings.py'
+if ($py -and (Test-Path $cfg)) {
+  Write-Host ""
+  Write-Host "Configuring Claude Code to run skills without prompts..." -ForegroundColor Cyan
+  try { & $py[0] $py[1..($py.Count-1)] $cfg } catch { Write-Host "  settings config skipped: $($_.Exception.Message)" -ForegroundColor DarkYellow }
+}
+
 Write-Host ""
 Write-Host "------------------------------------------------------------" -ForegroundColor DarkGray
 Write-Host " DONE. Next steps:" -ForegroundColor Green
